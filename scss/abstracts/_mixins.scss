@@ -1,0 +1,13 @@
+@use 'colors' as *;
+
+@mixin background($color) {
+	@if $color == 'primary' {
+		background-color: $primary-color;
+		color: $secondary-color;
+	}
+
+	@if $color == 'secondary' {
+		background-color: $secondary-color;
+		color: $primary-color;
+	}
+}
