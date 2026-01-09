@@ -1,0 +1,9 @@
+@use '../abstracts/index' as *;
+
+.bg-primary {
+	@include background('primary');
+}
+
+.bg-secondary {
+	@include background('secondary');
+}

@@ -174,4 +174,14 @@ h3 {
 h4 {
   font-size: 1.5rem;
   line-height: 1.4;
+}
+
+.bg-primary {
+  background-color: #4a5b4e;
+  color: #f6f5ea;
+}
+
+.bg-secondary {
+  background-color: #f6f5ea;
+  color: #4a5b4e;
 }/*# sourceMappingURL=style.css.map */
