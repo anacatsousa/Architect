@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+$paddings: (
+	'x': px-to-rem(50px),
+	'y': px-to-rem(80px),
+);
+
+@each $padding, $size in $paddings {
+	.p-#{$padding} {
+		@if $padding == 'x' {
+			padding-left: $size;
+			padding-right: $size;
+		} @else if $padding == 'y' {
+			padding-top: $size;
+			padding-bottom: $size;
+		}
+	}
+}
