@@ -184,4 +184,14 @@ h4 {
 .bg-secondary {
   background-color: #f6f5ea;
   color: #4a5b4e;
+}
+
+.p-x {
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
+}
+
+.p-y {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }/*# sourceMappingURL=style.css.map */
