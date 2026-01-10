@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.section-header__line {
+  height: 2px;
+  border: none;
+  flex: 1;
+}
+
 html,
 body,
 div,
@@ -176,6 +182,18 @@ h4 {
   line-height: 1.4;
 }
 
+.section-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5625rem;
+  margin-bottom: 3.75rem;
+}
+.section-header__title {
+  white-space: nowrap;
+}
 .bg-primary {
   background-color: #4a5b4e;
   color: #f6f5ea;
