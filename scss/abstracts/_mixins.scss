@@ -11,3 +11,12 @@
 		color: $primary-color;
 	}
 }
+
+@mixin flex($direction, $wrap, $align, $justify, $gap: 0) {
+	display: flex;
+	flex-direction: $direction;
+	flex-wrap: $wrap;
+	align-items: $align;
+	justify-content: $justify;
+	gap: $gap;
+}

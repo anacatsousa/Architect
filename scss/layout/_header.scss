@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.section-header {
+	@include flex(row, nowrap, center, space-between, px-to-rem(25px));
+	margin-bottom: px-to-rem(60px);
+
+	&__title {
+		white-space: nowrap;
+	}
+
+	&__line {
+		@extend %line;
+	}
+}
