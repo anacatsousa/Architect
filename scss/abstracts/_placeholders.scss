@@ -1,5 +1,15 @@
+@use '../abstracts/functions' as *;
+
 %line {
 	height: 2px;
 	border: none;
 	flex: 1;
+}
+
+%button {
+	cursor: pointer;
+	border: 1.5px solid currentColor;
+	padding: px-to-rem(10px) px-to-rem(30px);
+	text-transform: uppercase;
+	border-radius: 5px;
 }

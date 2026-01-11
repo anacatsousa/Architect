@@ -6,7 +6,12 @@ $h2: px-to-rem(24px);
 $h3: px-to-rem(20px);
 $h4: px-to-rem(24px);
 
-body {
+html {
+	font-size: 100%;
+}
+
+body,
+button {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 	font-style: normal;
