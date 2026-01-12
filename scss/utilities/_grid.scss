@@ -4,6 +4,10 @@
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	gap: px-to-rem(50px);
+
+	&--projects {
+		align-items: center;
+	}
 }
 
 @for $i from 1 through 12 {
