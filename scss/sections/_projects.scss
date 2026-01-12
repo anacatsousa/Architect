@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .projects {
+	@extend %height;
 	&__img {
 		@extend %img;
 	}
