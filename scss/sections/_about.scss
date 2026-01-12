@@ -4,4 +4,8 @@
 	&__img {
 		@extend %img;
 	}
+
+	&__text {
+		@include flex(column, nowrap, flex-start, flex-end);
+	}
 }
