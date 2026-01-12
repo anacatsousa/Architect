@@ -2,7 +2,14 @@
 
 .projects {
 	@extend %height;
+	@include flex(column, nowrap, stretch, space-between);
+
+	&__content {
+		@include flex(column, nowrap, flex-start, space-between, px-to-rem(35px));
+	}
+
 	&__img {
 		@extend %img;
+		height: 320px;
 	}
 }
