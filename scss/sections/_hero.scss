@@ -1,8 +1,19 @@
 @use '../abstracts' as *;
 
 .hero {
+	@extend %height;
+	@include flex(column, nowrap, center, center);
+
+	&__left {
+		@include flex(column, nowrap, flex-start, center, px-to-rem(80px));
+		clear: both;
+	}
+
 	&__logo {
 		@extend %logo;
+		position: absolute;
+		top: px-to-rem(80px);
+		left: px-to-rem(65px);
 	}
 
 	&__img {
