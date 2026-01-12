@@ -13,3 +13,15 @@
 	text-transform: uppercase;
 	border-radius: 5px;
 }
+
+%img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+%logo {
+	width: px-to-rem(250px);
+	height: auto;
+	display: block;
+}

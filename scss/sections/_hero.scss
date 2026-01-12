@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.hero {
+	&__logo {
+		@extend %logo;
+	}
+
+	&__img {
+		@extend %img;
+	}
+}

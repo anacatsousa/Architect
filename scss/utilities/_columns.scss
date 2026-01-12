@@ -1,0 +1,13 @@
+@use '../abstracts/' as *;
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: px-to-rem(20px);
+}
+
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		grid-column: span #{$i};
+	}
+}
