@@ -4,7 +4,6 @@
 $h1: px-to-rem(46px);
 $h2: px-to-rem(24px);
 $h3: px-to-rem(20px);
-$h4: px-to-rem(24px);
 
 html {
 	font-size: 100%;
@@ -37,10 +36,5 @@ h2 {
 }
 h3 {
 	font-size: $h3;
-	line-height: 1.4;
-}
-
-h4 {
-	font-size: $h4;
 	line-height: 1.4;
 }

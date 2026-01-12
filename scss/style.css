@@ -13,6 +13,18 @@
   border-radius: 5px;
 }
 
+.testimonials__img, .projects__img, .hero__img, .about__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero__logo {
+  width: 15.625rem;
+  height: auto;
+  display: block;
+}
+
 html,
 body,
 div,
@@ -190,11 +202,6 @@ h3 {
   line-height: 1.4;
 }
 
-h4 {
-  font-size: 1.5rem;
-  line-height: 1.4;
-}
-
 .section-header {
   display: flex;
   flex-direction: row;
@@ -225,4 +232,58 @@ h4 {
 .p-y {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.25rem;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-12 {
+  grid-column: span 12;
 }/*# sourceMappingURL=style.css.map */

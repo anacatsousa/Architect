@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+
+.testimonials {
+	&__img {
+		@extend %img;
+	}
+}

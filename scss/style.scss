@@ -12,9 +12,11 @@
 
 //layout
 
-@use './layout/header';
+@use './layout';
 
 // sections
+
+@use './sections';
 
 // utilities
 
