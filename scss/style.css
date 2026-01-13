@@ -13,7 +13,7 @@
   border-radius: 5px;
 }
 
-.testimonials__img, .projects__img, .hero__img, .about__img {
+.testimonials__img, .projects__img, .portfolio__img, .hero__img, .about__img {
   width: 100%;
   height: auto;
   display: block;
@@ -205,7 +205,7 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .section-header {
@@ -215,7 +215,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 1.5625rem;
-  margin-bottom: 3.75rem;
+  margin-bottom: 5rem;
 }
 .section-header__title {
   white-space: nowrap;
@@ -251,6 +251,18 @@ h3 {
   top: 5rem;
   left: 4.0625rem;
 }
+.portfolio__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.875rem;
+}
+.portfolio__img {
+  height: 520px;
+}
+
 .projects {
   display: flex;
   flex-direction: column;

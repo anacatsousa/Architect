@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+.portfolio {
+	//@extend %height;
+	&__content {
+		@include flex(column, nowrap, flex-start, center, px-to-rem(30px));
+	}
+
+	&__img {
+		@extend %img;
+		height: 520px;
+	}
+}
