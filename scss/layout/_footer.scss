@@ -2,4 +2,28 @@
 
 .footer {
 	@extend %height;
+
+	&__logo-container {
+		@include flex(column, nowrap, center, flex-start);
+	}
+
+	&__logo {
+		@extend %logo;
+	}
+
+	&__socials {
+		@include flex(column, nowrap, flex-end, flex-start);
+		h3 {
+			@extend %padding-title-footer;
+		}
+		a {
+			color: $secondary-color;
+		}
+	}
+
+	&__contact {
+		h3 {
+			@extend %padding-title-footer;
+		}
+	}
 }
