@@ -3,5 +3,21 @@
 .testimonials {
 	&__img {
 		@extend %img;
+		max-height: 650px;
+	}
+
+	&__container {
+		padding: 0 px-to-rem(120px);
+	}
+
+	&__content {
+		@include flex(column, nowrap, flex-start, center, px-to-rem(35px));
+		&--second {
+			@include flex(column, nowrap, flex-start, center, px-to-rem(35px));
+		}
+	}
+
+	&__names {
+		font-weight: 600;
 	}
 }
