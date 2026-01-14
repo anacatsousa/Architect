@@ -3,7 +3,7 @@
 .portfolio {
 	//@extend %height;
 	&__content {
-		@include flex(column, nowrap, flex-start, center, px-to-rem(30px));
+		@include flex(column, nowrap, flex-start, center, px-to-rem(35px));
 	}
 
 	&__img {

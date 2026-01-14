@@ -257,7 +257,7 @@ h3 {
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: center;
-  gap: 1.875rem;
+  gap: 2.1875rem;
 }
 .portfolio__img {
   height: 520px;
@@ -281,6 +281,32 @@ h3 {
 }
 .projects__img {
   height: 320px;
+}
+
+.testimonials__img {
+  max-height: 650px;
+}
+.testimonials__container {
+  padding: 0 7.5rem;
+}
+.testimonials__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.1875rem;
+}
+.testimonials__content--second {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.1875rem;
+}
+.testimonials__names {
+  font-weight: 600;
 }
 
 .bg-primary {
