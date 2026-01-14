@@ -8,6 +8,10 @@
 	&--projects {
 		align-items: center;
 	}
+
+	&--footer {
+		align-items: flex-end;
+	}
 }
 
 @for $i from 1 through 12 {
