@@ -14,6 +14,11 @@
 		position: absolute;
 		top: px-to-rem(80px);
 		left: px-to-rem(65px);
+
+		@include mobile {
+			position: static;
+			margin-bottom: px-to-rem(40px);
+		}
 	}
 
 	&__img {

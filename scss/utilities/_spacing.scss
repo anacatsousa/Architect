@@ -1,18 +1,34 @@
 @use '../abstracts' as *;
 
 $paddings: (
-	'x': px-to-rem(65px),
-	'y': px-to-rem(80px),
+	'x': (
+		desktop: px-to-rem(65px),
+		mobile: px-to-rem(20px),
+	),
+	'y': (
+		desktop: px-to-rem(80px),
+		mobile: px-to-rem(60px),
+	),
 );
 
 @each $padding, $size in $paddings {
 	.p-#{$padding} {
 		@if $padding == 'x' {
-			padding-left: $size;
-			padding-right: $size;
+			padding-left: map-get($size, desktop);
+			padding-right: map-get($size, desktop);
+
+			@include mobile {
+				padding-left: map-get($size, mobile);
+				padding-right: map-get($size, mobile);
+			}
 		} @else if $padding == 'y' {
-			padding-top: $size;
-			padding-bottom: $size;
+			padding-top: map-get($size, desktop);
+			padding-bottom: map-get($size, desktop);
+
+			@include mobile {
+				padding-top: map-get($size, mobile);
+				padding-bottom: map-get($size, mobile);
+			}
 		}
 	}
 }

@@ -13,6 +13,17 @@
 
 	&__socials {
 		@include flex(column, nowrap, flex-end, flex-start);
+
+		@include mobile {
+			@include flex(column, nowrap, flex-start, flex-start);
+		}
+
+		ul {
+			@include mobile {
+				@include flex(row, nowrap, center, flex-start, px-to-rem(10px));
+			}
+		}
+
 		h3 {
 			@extend %padding-title-footer;
 		}

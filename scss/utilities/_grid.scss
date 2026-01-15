@@ -5,17 +5,32 @@
 	grid-template-columns: repeat(12, 1fr);
 	gap: px-to-rem(50px);
 
+	@include mobile {
+		@include flex(column, nowrap, center, center, px-to-rem(40px));
+	}
+
 	&--projects {
 		align-items: center;
 	}
 
 	&--footer {
 		align-items: flex-end;
+		@include mobile {
+			@include flex(column, nowrap, flex-start, flex-end, px-to-rem(60px));
+		}
 	}
 }
 
 @for $i from 1 through 12 {
 	.col-#{$i} {
 		grid-column: span #{$i};
+	}
+}
+
+@include tablet {
+	@for $i from 1 through 12 {
+		.col-md-#{$i} {
+			grid-column: span #{$i};
+		}
 	}
 }

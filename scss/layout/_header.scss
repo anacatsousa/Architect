@@ -4,8 +4,17 @@
 	@include flex(row, nowrap, center, space-between, px-to-rem(25px));
 	margin-bottom: px-to-rem(80px);
 
+	@include mobile {
+		display: block;
+		text-align: center;
+		margin-bottom: px-to-rem(40px);
+	}
+
 	&__title {
 		white-space: nowrap;
+		@include mobile {
+			margin-bottom: px-to-rem(20px);
+		}
 	}
 
 	&__line {

@@ -9,5 +9,9 @@
 	&__img {
 		@extend %img;
 		height: 520px;
+
+		@include mobile {
+			height: auto;
+		}
 	}
 }

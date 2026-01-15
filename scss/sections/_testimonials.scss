@@ -4,10 +4,17 @@
 	&__img {
 		@extend %img;
 		max-height: 650px;
+
+		@include mobile {
+			max-height: none;
+		}
 	}
 
 	&__container {
 		padding: 0 px-to-rem(120px);
+		@include mobile {
+			padding: 0;
+		}
 	}
 
 	&__content {

@@ -1,4 +1,5 @@
 @use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
 
 %line {
 	height: 2px;
@@ -25,6 +26,10 @@
 	width: px-to-rem(250px);
 	height: auto;
 	display: block;
+
+	@include mobile {
+		width: px-to-rem(215px);
+	}
 }
 
 %height {
