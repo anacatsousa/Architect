@@ -1,9 +1,9 @@
 @use '../abstracts' as *;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-$h1: px-to-rem(56px);
-$h2: px-to-rem(24px);
-$h3: px-to-rem(20px);
+$h1: clamp(#{px-to-rem(38px)}, 5vw + 1rem, #{px-to-rem(56px)});
+$h2: clamp(#{px-to-rem(20px)}, 3vw + 0.5rem, #{px-to-rem(24px)});
+$h3: clamp(#{px-to-rem(18px)}, 2vw + 0.5rem, #{px-to-rem(20px)});
 
 html {
 	font-size: 100%;
