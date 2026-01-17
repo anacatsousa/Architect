@@ -10,6 +10,10 @@
 		@extend %img;
 		height: 520px;
 
+		@include tablet {
+			height: 380px;
+		}
+
 		@include mobile {
 			height: auto;
 		}

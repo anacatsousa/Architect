@@ -12,6 +12,9 @@
 
 	&__container {
 		padding: 0 px-to-rem(120px);
+		@include tablet {
+			padding: 0 px-to-rem(50px);
+		}
 		@include mobile {
 			padding: 0;
 		}

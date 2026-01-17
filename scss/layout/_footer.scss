@@ -5,6 +5,10 @@
 
 	&__logo-container {
 		@include flex(column, nowrap, center, flex-start);
+
+		@include tablet {
+			display: block;
+		}
 	}
 
 	&__logo {

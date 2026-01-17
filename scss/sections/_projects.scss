@@ -2,15 +2,21 @@
 
 .projects {
 	@extend %height;
-	@include mobile {
-		height: auto;
-	}
 	@include flex(column, nowrap, stretch, space-between);
+
+	@include tablet {
+		min-height: 100%;
+	}
 
 	&__content {
 		@include flex(column, nowrap, flex-start, space-between, px-to-rem(35px));
+
 		&-button {
-			@include flex(row, nowrap, center, center);
+			@include flex(row, nowrap, flex-start, flex-start);
+
+			@include tablet {
+				justify-content: center;
+			}
 		}
 	}
 

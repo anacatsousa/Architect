@@ -5,8 +5,12 @@
 	grid-template-columns: repeat(12, 1fr);
 	gap: px-to-rem(50px);
 
+	@include tablet {
+		align-content: space-between;
+	}
+
 	@include mobile {
-		@include flex(column, nowrap, center, center, px-to-rem(40px));
+		@include flex(column, nowrap, flex-start, space-between, px-to-rem(40px));
 	}
 
 	&--projects {
@@ -14,9 +18,10 @@
 	}
 
 	&--footer {
-		align-items: flex-end;
+		align-content: flex-end;
+
 		@include mobile {
-			@include flex(column, nowrap, flex-start, flex-end, px-to-rem(60px));
+			@include flex(column, nowrap, flex-start, flex-end, px-to-rem(60px) !important);
 		}
 	}
 }
