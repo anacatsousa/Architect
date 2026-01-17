@@ -5,8 +5,10 @@
 	@include flex(column, nowrap, center, center);
 
 	&__left {
-		@include flex(column, nowrap, flex-start, center, px-to-rem(80px));
-		clear: both;
+		@include flex(column, nowrap, flex-start, flex-start, px-to-rem(60px));
+		@include mobile {
+			gap: px-to-rem(50px);
+		}
 	}
 
 	&__logo {
@@ -15,9 +17,8 @@
 		top: px-to-rem(80px);
 		left: px-to-rem(65px);
 
-		@include mobile {
+		@include tablet {
 			position: static;
-			margin-bottom: px-to-rem(40px);
 		}
 	}
 
