@@ -201,7 +201,7 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 5vw + 1rem, 5.625rem);
+  font-size: clamp(2.5rem, 4vw + 0.5rem, 5.625rem);
   line-height: 1.2;
 }
 
@@ -348,6 +348,11 @@ h3 {
 @media (max-width: 576px) {
   .hero__left {
     gap: 2.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .hero__left {
+    gap: 5rem;
   }
 }
 @media (max-width: 576px) {
