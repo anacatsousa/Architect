@@ -6,6 +6,9 @@
 
 	&__left {
 		@include flex(column, nowrap, flex-start, flex-start, px-to-rem(60px));
+		@include tablet {
+			gap: px-to-rem(80px);
+		}
 		@include mobile {
 			gap: px-to-rem(50px);
 		}
